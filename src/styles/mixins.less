@@ -1,0 +1,17 @@
+/* Mixins reutilizáveis */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-style(@bg-color, @text-color) {
+    display: block;
+    background-color: @bg-color;
+    color: @text-color;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 8px;
+    margin-top: 8px;
+    text-decoration: none;
+}

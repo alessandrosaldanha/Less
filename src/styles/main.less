@@ -1,0 +1,30 @@
+@import "variables.less";
+@import "mixins.less";
+@import "header.less";
+@import "products.less";
+@import "media.less";
+
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: @font-family;
+    color: @text-color;
+   
+    
+}
+
+body {
+    background-color: @background-color;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: @container-width;
+    width: 100%;
+    margin: 0 auto;
+}
