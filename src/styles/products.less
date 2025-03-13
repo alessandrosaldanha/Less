@@ -10,17 +10,30 @@ section {
     row-gap: 4%;
     width: 100%;
 
+
     .product-item {
         img {
-            width: 40%;
+            width: 20%;
             border-radius: 16px;
+
         }
 
         .product-button {
-            .button-style(@button-color, @text-color);
+                text-decoration: none;
+                background-color: #colors[buttonColor];
+                color: #colors[textColor];
+                padding: 8px 16px;
+                border: 1px solid #colors[buttonColor];
+                border-radius: 4px;
+                cursor: pointer;
+                display: block;
+                transition: all ease .3s;
+
+            
 
             &:hover {
-                background-color: @button-hover;
+                background-color: #colors[buttonHover];
+                background-color: transparent;
             }
         }
     }
